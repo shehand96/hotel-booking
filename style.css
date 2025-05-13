@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f2f2f2;
+    color: #333;
+  }
+  
+  header .hero {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+  }
+  
+  header .hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  header .overlay h1 {
+    font-size: 3rem;
+    margin: 0;
+  }
+  
+  header .overlay p {
+    font-size: 1.2rem;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  .booking-form {
+    background: white;
+    padding: 20px;
+    max-width: 600px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .booking-form h2 {
+    text-align: center;
+  }
+  
+  .booking-form label {
+    margin-top: 10px;
+    display: block;
+  }
+  
+  .booking-form input,
+  .booking-form select,
+  .booking-form button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .booking-form button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: background 0.3s;
+  }
+  
+  .booking-form button:hover {
+    background-color: #0056b3;
+  }
+  
+  #confirmation {
+    margin-top: 20px;
+    color: green;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .gallery {
+    text-align: center;
+    margin-top: 40px;
+  }
+  
+  .gallery img {
+    width: 100%;
+    max-width: 600px;
+    height: 350px;          /* 👈 force a consistent height */
+    object-fit: cover;      /* 👈 crop to fill without distortion */
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  }
+  
+  footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: white;
+  }
+  

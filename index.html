@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sunrise Hotel Booking</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="hero">
+      <img src="images/hotel.jpg" alt="Hotel view">
+      <div class="overlay">
+        <h1>Sunrise Hotel</h1>
+        <p>Luxury, Comfort & Convenience</p>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="booking-form">
+      <h2>Book Your Stay</h2>
+      <form id="hotelForm">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+
+        <label for="checkin">Check-in Date:</label>
+        <input type="date" id="checkin" required>
+
+        <label for="checkout">Check-out Date:</label>
+        <input type="date" id="checkout" required>
+
+        <label for="room">Room Type:</label>
+        <select id="room" required>
+          <option value="single">Single</option>
+          <option value="double">Double</option>
+          <option value="suite">Suite</option>
+        </select>
+
+        <button type="submit">Book Now</button>
+      </form>
+
+      <div id="confirmation" class="hidden"></div>
+    </section>
+
+    <section class="gallery">
+      <h2>Our Rooms</h2>
+      <img src="images/room.jpg" alt="Hotel Room">
+      <img src="images/room1.jpg" alt="Hotel Room 1">
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 ShehanD Creations. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
